@@ -1,4 +1,4 @@
-package com.example.medium.dtos;
+package com.example.medium.dtos.requests;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +9,7 @@ import java.io.Serializable;
 public class CreateEventRequest implements Serializable {
 
     private String type;
+
     private CreateOrderRequest order;
 
 }

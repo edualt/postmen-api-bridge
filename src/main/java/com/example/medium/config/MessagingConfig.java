@@ -12,9 +12,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MessagingConfig {
 
-    public static final String QUEUE = "ms.package;create-package";
-    public static final String EXCHANGE = "ms.event";
-    public static final String ROUTING_KEY = "event_succeeded";
+    public static final String QUEUE = "event_initializer";
+    public static final String EXCHANGE = "shipping_updates";
+    public static final String ROUTING_KEY = "event_created";
 
     @Bean
     public Queue queue(){
